@@ -6,6 +6,8 @@ import ModelComponent from './exam01.js';
 import listComponent from './list.js';
 import ForComponent from './exam02.js';
 import IfComponent from './if.js';
+import EventComponent from './event.js';
+import WatchComponent from './watch.js';
 
 const { createApp } = Vue
 
@@ -17,7 +19,9 @@ const template =`
     <!-- <ModelComponent /> -->
     <!-- <listComponent /> -->
     <!-- <ForComponent /> -->
-    <IfComponent />
+    <!-- <IfComponent /> -->
+    <!-- <EventComponent /> -->
+    <WatchComponent />
 </div>
 `;
 
@@ -29,7 +33,9 @@ createApp({
         ModelComponent,
         listComponent,
         ForComponent,
-        IfComponent
+        IfComponent,
+        EventComponent,
+        WatchComponent
     }
 })
 .mount('#app');

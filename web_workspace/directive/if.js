@@ -13,7 +13,7 @@ let template=`
             체크박스가 OFF
         </p>
         <p v-show="myVisible">
-        show 디렉티브
+            show 디렉티브
         </p>
 
         <hr>
