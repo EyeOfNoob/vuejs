@@ -24,8 +24,8 @@ let ChildComponent = {
 export default{
     template : `
         <div>
-            <childComponent v-bind:myname="first" v-on:update-name="getName"/>
-            <childComponent myname="second"/>
+            <ChildComponent v-bind:myname="first" v-on:update-name="getName"/>
+            <ChildComponent myname="second"/>
         </div>
     `,
     data(){

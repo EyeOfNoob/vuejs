@@ -20,6 +20,19 @@ let template=`
 
 export default({
     template,
+    data(){
+        return {
+            isMounted : false
+        }
+    },
+    mounted(){
+        this.isMounted = true;
+    },
+    computed : {    //<=created 시점에 시행
+        msg(){      //$refs에 값이 담기는 시점은 mounted이므로 딜레이를 주는 구조로 작성
+            return !this.isMounted ? '' : this.$refs.child.msg;
+        }
+    },
     methods : {
         changeChildData(){
             // console.log(this.$refs);
